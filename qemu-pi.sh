@@ -32,7 +32,7 @@ BRIDGE=br0              # name for the bridge we will create to share network wi
 #MAC='52:54:be:36:42:a9' # comment this line for random MAC (maybe annoying if on DHCP)
 BINARY_PATH=/sbin    # path prefix for binaries
 NO_GRAPHIC=1            # set to 1 to start in no graphic mode
-MY_PARAMS_QEMU="-hdb swap2.img "
+MY_PARAMS_QEMU="-hdb swap.img "
 
 # sanity checks
 type qemu-system-arm &>/dev/null || { echo "QEMU ARM not found"       ; exit 1; }
